@@ -7,7 +7,6 @@ import com.mahendra.models.SilverCreditCard;
 /**
  * A Factory to create an instances of {@link SilverCreditCard}.
  * @author Mahendra Shinde
- *
  */
 public class SilverCreditCardFactory extends BaseCreditCardFactory {
 

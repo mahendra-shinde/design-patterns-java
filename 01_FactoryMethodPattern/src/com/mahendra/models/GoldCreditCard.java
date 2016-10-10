@@ -1,5 +1,10 @@
 package com.mahendra.models;
 
+/**
+ * 
+ * @author <u>Mahendra Shinde</u>
+ *
+ */
 public class GoldCreditCard implements CreditCard {
 
 	@Override

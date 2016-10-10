@@ -6,7 +6,6 @@ import com.mahendra.models.GoldCreditCard;
 /**
  * A Factory to create an instances of {@link GoldCreditCard}.
  * @author Mahendra Shinde
- *
  */
 public class GoldCreditCardFactory extends BaseCreditCardFactory {
 

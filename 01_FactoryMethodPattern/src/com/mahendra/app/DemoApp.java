@@ -5,7 +5,7 @@ import com.mahendra.factories.GoldCreditCardFactory;
 import com.mahendra.models.CreditCard;
 
 /**
- * A Demo Application for Design Pattern <b>{@code Factory Method}</b>
+ * A Demo Application for <i>Design Pattern</i> <b>{@code Factory Method}</b>
  * @author Mahendra Shinde
  *
  */

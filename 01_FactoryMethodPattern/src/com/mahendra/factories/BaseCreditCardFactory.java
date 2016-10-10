@@ -5,7 +5,6 @@ import com.mahendra.models.CreditCard;
 /**
  * A Factory base to create instances of CreditCards
  * @author Mahendra Shinde
- *
  */
 public abstract class BaseCreditCardFactory {
 	public CreditCard getCreditCard(){
