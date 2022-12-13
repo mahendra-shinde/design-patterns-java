@@ -1,5 +1,7 @@
 package com.mahendra.demo;
 
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Properties;
 
 import com.mahendra.models.Machine;
@@ -16,9 +18,18 @@ public class DemoApp {
 		Machine myMachine = null;
 		
 		Properties props = new Properties();
-		props.put("PROCESSOR", "expensive");
-		props.put("HARDDISK", "cheap");
-		props.put("MONITOR", "cheap");
+		
+		try {
+			// Find the file "preferences.txt" next to DemoApp class (ClassPath)
+			props.load(DemoApp.class.getResourceAsStream("/preferences.txt"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+//		props.put("PROCESSOR", "expensive");
+//		props.put("HARDDISK", "cheap");
+//		props.put("MONITOR", "cheap");
 		MachineBuilder builder = new MachineBuilder(props);
 
 		myMachine = builder.build();

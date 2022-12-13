@@ -7,18 +7,43 @@ import java.util.Properties;
  * @author Mahendra Shinde
  *
  */
-public class MachineBuilder {
+public class MachineBuilder2 {
 	private Properties props = null;
 	
 	private static final String PROCESSOR_TYPE = "cheap";
 	private static final String HARDDISK_TYPE = "cheap";
 	private static final String MONITOR_TYPE = "cheap";
 
-	public MachineBuilder(Properties props) {
+	public MachineBuilder2() {
 		super();
 		this.props = new Properties();
 		validateProps(props);
 	}
+	
+	
+	public MachineBuilder2 setProcessor(String processor) {
+		// 1 Validation
+		if(processor.equals("cheap") || processor.equals("expensive")) {
+			this.props.setProperty(PROCESSOR_TYPE, processor);
+		}
+		return this;
+	}
+	public MachineBuilder2 setHardDisk(String disk) {
+		// 1 Validation
+		if(disk.equals("cheap") || disk.equals("expensive")) {
+			this.props.setProperty(HARDDISK_TYPE, disk);
+		}
+		return this;
+	}
+	
+	public MachineBuilder2 setMonitor(String monitor) {
+		// 1 Validation
+		if(monitor.equals("cheap") || monitor.equals("expensive")) {
+			this.props.setProperty(MONITOR_TYPE, monitor);
+		}
+		return this;
+	}
+	
 	
 	
 	private void validateProps(Properties props){
