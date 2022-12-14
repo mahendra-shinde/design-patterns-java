@@ -20,7 +20,7 @@ public class Bank {
 		System.out.printf("%15s | %-20s | %s\n", "Acc Number", "Customer Name", "Opening Date/Time");
 		while(it.hasNext()) {
 			Account acc = it.next();
-			System.out.printf("\n%15s | %-20s | %s", acc.getAccNumber() , acc.getHolderName() ,acc.getOpeningDate());
+			System.out.println(new Printer(acc));
 		}
 	}
 	
